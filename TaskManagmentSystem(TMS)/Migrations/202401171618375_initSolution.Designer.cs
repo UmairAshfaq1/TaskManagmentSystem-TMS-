@@ -7,13 +7,13 @@ namespace TaskManagmentSystem_TMS_.Migrations
     using System.Resources;
     
     [GeneratedCode("EntityFramework.Migrations", "6.4.4")]
-    public sealed partial class employeeModelUpdated : IMigrationMetadata
+    public sealed partial class initSolution : IMigrationMetadata
     {
-        private readonly ResourceManager Resources = new ResourceManager(typeof(employeeModelUpdated));
+        private readonly ResourceManager Resources = new ResourceManager(typeof(initSolution));
         
         string IMigrationMetadata.Id
         {
-            get { return "202401141840048_employeeModelUpdated"; }
+            get { return "202401171618375_initSolution"; }
         }
         
         string IMigrationMetadata.Source
