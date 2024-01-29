@@ -21,7 +21,7 @@ namespace TaskManagmentSystem_TMS_.Controllers
         public ActionResult CreateEmployee(Employee employee)
         {
             //HttpPostedFileBase pb = Request.Files["ProfilePicture"];
-
+            // Chat GPT suggested to use ViewModel instead of model and function as asyn/await
             Employee employee1 = new Employee();
             
             var ProfileImage = employee.ProfilePicture;
@@ -30,8 +30,6 @@ namespace TaskManagmentSystem_TMS_.Controllers
             {
                 string ProfileImgExtention = Path.GetExtension(ProfileImage.FileName);
                 string[] allowedExtention = { ".jpg", ".png", ".jpeg", ".svg" };
-
-
 
                 //if (!allowedExtention.Contains(ProfileImgExtention))
                 //{
@@ -55,7 +53,7 @@ namespace TaskManagmentSystem_TMS_.Controllers
 
                     try
                     {
-                        employee1.ProfilePicture.SaveAs(path);
+                        ProfileImage.SaveAs(path);
 
                         employee1.ProfilePicPath = path;
                         employee1.Name = employee.Name;

@@ -27,6 +27,7 @@ namespace TaskManagmentSystem_TMS_.Models
 
 
         public virtual DbSet<Employee> employees { get; set; }
+        public virtual DbSet<Tasks> Tasks { get; set; }
 
         public static ApplicationDbContext Create()
         {

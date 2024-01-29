@@ -1,0 +1,44 @@
+﻿@model TaskManagmentSystem_TMS_.Models.Tasks
+@{
+    ViewBag.Title = "CreateTask";
+}
+
+<h2>CreateTask</h2>
+
+<div class="container">
+
+    @using (@Html.BeginForm("CreateTask", "Tasks", FormMethod.Post))
+    {
+        <div class="form-group">
+            @Html.LabelFor(model => model.Title)
+            @Html.TextBoxFor(model => model.Title, new { @class = "form-control" })
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.Description)
+            @Html.TextBoxFor(model => model.Description, new { @class = "form-control" })
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.Priority)
+            @Html.TextBoxFor(model => model.Priority, new { @class = "form-control" })
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.StartTime)
+            @Html.TextBoxFor(model => model.StartTime, new { @class = "form-control" })
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.EndTime)
+            @Html.TextBoxFor(model => model.EndTime, new { @class = "form-control" })
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.SelectedEmployeeId)
+            @Html.DropDownListFor(model => model.SelectedEmployeeId, new SelectList(Model.Employees,"Id","Name"), "Select an Employee", new { @class = "form-control" })
+        </div>
+
+        <button type="submit">Create task</button>
+    }
+</div>

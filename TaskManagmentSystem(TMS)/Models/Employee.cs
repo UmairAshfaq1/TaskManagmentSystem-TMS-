@@ -15,5 +15,9 @@ namespace TaskManagmentSystem_TMS_.Models
         public HttpPostedFileBase ProfilePicture { get; set; }
         public string Department { get; set; }
         public string phoneNo { get; set; }
+        
+        //Navigational properties
+            //Collection Navigation Property:
+        public virtual ICollection<Tasks> Tasks { get; set; }
     }
 }

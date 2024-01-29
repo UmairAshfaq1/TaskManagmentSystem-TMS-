@@ -1,0 +1,30 @@
+﻿@model IEnumerable<TaskManagmentSystem_TMS_.Models.Tasks>
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<div class="container">
+    @Html.ActionLink("Click here to Create task", "CreateTask")
+
+        <table class="table">
+            <tr>
+                <th>Title</th>
+                <th>Description</th>
+                <th>Start Time</th>
+                <th>End Time</th>
+            </tr>
+            @foreach(var task in Model)
+            {
+                <tr>
+                    <td>@Html.DisplayFor(model => task.Title)</td>
+                    <td>@Html.DisplayFor(model => task.Description)</td>
+                    <td>@Html.DisplayFor(model => task.StartTime)</td>
+                    <td>@Html.DisplayFor(model => task.EndTime)</td>
+                    @*<td>@Html.DisplayFor(model => task.SelectedEmployeeId)</td>*@
+                </tr>
+            }
+        </table>
+    
+</div>
