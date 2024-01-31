@@ -176,25 +176,9 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\202401171618375_initSolution.cs" />
-    <Compile Include="Migrations\202401171618375_initSolution.designer.cs">
-      <DependentUpon>202401171618375_initSolution.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\202401171722022_secondMigration.cs" />
-    <Compile Include="Migrations\202401171722022_secondMigration.designer.cs">
-      <DependentUpon>202401171722022_secondMigration.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\202401201112400_relationshipEmpTask.cs" />
-    <Compile Include="Migrations\202401201112400_relationshipEmpTask.designer.cs">
-      <DependentUpon>202401201112400_relationshipEmpTask.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\202401201719161_relationshipChanges.cs" />
-    <Compile Include="Migrations\202401201719161_relationshipChanges.designer.cs">
-      <DependentUpon>202401201719161_relationshipChanges.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\202401201721179_new.cs" />
-    <Compile Include="Migrations\202401201721179_new.designer.cs">
-      <DependentUpon>202401201721179_new.cs</DependentUpon>
+    <Compile Include="Migrations\202401311805294_inti.cs" />
+    <Compile Include="Migrations\202401311805294_inti.designer.cs">
+      <DependentUpon>202401311805294_inti.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
@@ -284,20 +268,8 @@
     <Content Include="Scripts\jquery-3.4.1.min.map" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\202401171618375_initSolution.resx">
-      <DependentUpon>202401171618375_initSolution.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202401171722022_secondMigration.resx">
-      <DependentUpon>202401171722022_secondMigration.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202401201112400_relationshipEmpTask.resx">
-      <DependentUpon>202401201112400_relationshipEmpTask.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202401201719161_relationshipChanges.resx">
-      <DependentUpon>202401201719161_relationshipChanges.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202401201721179_new.resx">
-      <DependentUpon>202401201721179_new.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\202401311805294_inti.resx">
+      <DependentUpon>202401311805294_inti.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

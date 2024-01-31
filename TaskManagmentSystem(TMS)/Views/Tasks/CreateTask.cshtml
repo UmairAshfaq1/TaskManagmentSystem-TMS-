@@ -34,10 +34,10 @@
             @Html.TextBoxFor(model => model.EndTime, new { @class = "form-control" })
         </div>
 
-        <div class="form-group">
+        @*<div class="form-group">
             @Html.LabelFor(model => model.SelectedEmployeeId)
             @Html.DropDownListFor(model => model.SelectedEmployeeId, new SelectList(Model.Employees,"Id","Name"), "Select an Employee", new { @class = "form-control" })
-        </div>
+        </div>*@
 
         <button type="submit">Create task</button>
     }

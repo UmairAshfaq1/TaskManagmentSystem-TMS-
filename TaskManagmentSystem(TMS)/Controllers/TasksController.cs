@@ -13,17 +13,17 @@ namespace TaskManagmentSystem_TMS_.Controllers
         // GET: Tasks
         public ActionResult Index()
         {
-            var noofTasks = dbContext.Tasks.ToList();
-            return View(noofTasks);
+            var NoOfTasks = dbContext.Tasks.ToList();
+            return View();
         }
         public ActionResult CreateTask()
         {
             var Employees = dbContext.employees.ToList();
-            var viewModel = new Tasks()
-            {
-                Employees = Employees
-            };
-            return View(viewModel);
+            //var viewModel = new Tasks()
+            //{
+            //    Employees = Employees
+            //};
+            return View();
         }
         [HttpPost]
         public ActionResult CreateTask(Tasks tasks)
@@ -35,7 +35,7 @@ namespace TaskManagmentSystem_TMS_.Controllers
                 Priority = tasks.Priority,
                 StartTime = DateTime.Now,
                 EndTime = DateTime.Now.AddHours(1),
-                SelectedEmployeeId = tasks.SelectedEmployeeId,
+                //SelectedEmployeeId = tasks.SelectedEmployeeId,
             };
             dbContext.Tasks.Add(saveTask);
             dbContext.SaveChanges();
